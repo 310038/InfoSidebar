@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "InfoSidebar": [
+        "dist/info-sidebar"
+      ],
+         "@angular/*": [
+      "./node_modules/@angular/*"
+   ],
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
