@@ -6,12 +6,10 @@ import { InfoSidebarComponent } from 'info-sidebar/src/public-api';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,InfoSidebarComponent],
+  imports: [CommonModule, RouterOutlet, InfoSidebarComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'infosidebar-test';
-  value = 'XXX系統';
-  
+  title = '臨床決策支援';
 }
