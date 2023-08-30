@@ -11,7 +11,7 @@ import { DividerModule } from 'primeng/divider';
 import { ExtandDialogComponent } from '@his-component/extand-dialog/dist/extand-dialog';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 @Component({
-  selector: 'his-infoSidebar',
+  selector: 'his-info-sidebar',
   standalone: true,
   imports: [
     CommonModule,
@@ -29,7 +29,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 })
 export class InfoSidebarComponent {
   isVisible: boolean = false;
-
+  selectedTemplate!: TemplateRef<any>;
+  
   /**
    * 接收欲呈現的資料
    */
@@ -53,7 +54,8 @@ export class InfoSidebarComponent {
   /**
    * 是否彈出dialog視窗
    */
-  onExtendedDialog() {
-    this.isVisible = !this.isVisible;
+  onExtendedDialog(selectedTemplate: TemplateRef<any>) {
+    this.isVisible = true;
+    this.selectedTemplate = selectedTemplate;
   }
 }

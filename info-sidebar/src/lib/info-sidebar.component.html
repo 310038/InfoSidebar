@@ -10,7 +10,7 @@
               title
             }}</span>
             <button
-              (click)="onExtendedDialog()"
+              (click)="onExtendedDialog(dialogTemplate)"
               pButton
               pRipple
               type="button"
@@ -51,7 +51,7 @@
               >抽審描述</span
             >
             <p-button
-              (click)="onExtendedDialog()"
+              (click)="onExtendedDialog(suggestionTemplate)"
               type="button"
               icon="pi pi-window-maximize"
               styleClass="p-button-rounded p-button-text mr-2"
@@ -72,8 +72,15 @@
 </div>
 
 <his-extand-dialog
-  [inputTemplate]="dialogTemplate"
+  [inputTemplate]="selectedTemplate "
+  [header]="title"
+  [(visible)]="isVisible"
+>
+</his-extand-dialog>
+
+<!-- <his-extand-dialog
+  [inputTemplate]="suggestionTemplate "
   [header]="title"
   [visible]="isVisible"
 >
-</his-extand-dialog>
+</his-extand-dialog> -->

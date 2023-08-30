@@ -2,6 +2,7 @@ import { TemplateRef } from '@angular/core';
 import * as i0 from "@angular/core";
 export declare class InfoSidebarComponent {
     isVisible: boolean;
+    selectedTemplate: TemplateRef<any>;
     /**
      * 接收欲呈現的資料
      */
@@ -21,7 +22,7 @@ export declare class InfoSidebarComponent {
     /**
      * 是否彈出dialog視窗
      */
-    onExtendedDialog(): void;
+    onExtendedDialog(selectedTemplate: TemplateRef<any>): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<InfoSidebarComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<InfoSidebarComponent, "his-infoSidebar", never, { "title": { "alias": "title"; "required": false; }; "systemTemplateI": { "alias": "systemTemplateI"; "required": false; }; "systemTemplateII": { "alias": "systemTemplateII"; "required": false; }; "suggestionTemplate": { "alias": "suggestionTemplate"; "required": false; }; }, {}, never, never, true, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<InfoSidebarComponent, "his-info-sidebar", never, { "title": { "alias": "title"; "required": false; }; "systemTemplateI": { "alias": "systemTemplateI"; "required": false; }; "systemTemplateII": { "alias": "systemTemplateII"; "required": false; }; "suggestionTemplate": { "alias": "suggestionTemplate"; "required": false; }; }, {}, never, never, true, never>;
 }
