@@ -9,6 +9,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { ExtandDialogComponent } from '@his-component/extand-dialog/dist/extand-dialog';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 @Component({
   selector: 'his-infoSidebar',
   standalone: true,
@@ -21,6 +22,7 @@ import { ExtandDialogComponent } from '@his-component/extand-dialog/dist/extand-
     CardModule,
     DividerModule,
     ExtandDialogComponent,
+    ScrollPanelModule,
   ],
   templateUrl: './info-sidebar.component.html',
   styleUrls: ['./info-sidebar.component.scss'],
