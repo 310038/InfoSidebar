@@ -8,7 +8,7 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
-import { ExtandDialogComponent } from '@his-component/extand-dialog/dist/extand-dialog';
+import { ExtandDialogComponent } from '@his-directive/extand-dialog/dist/extand-dialog';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 @Component({
   selector: 'his-info-sidebar',
@@ -30,7 +30,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 export class InfoSidebarComponent {
   isVisible: boolean = false;
   selectedTemplate!: TemplateRef<any>;
-  
+
   /**
    * 接收欲呈現的資料
    */

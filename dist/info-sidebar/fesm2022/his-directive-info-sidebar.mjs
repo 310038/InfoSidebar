@@ -11,7 +11,7 @@ import * as i5 from 'primeng/button';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
-import { ExtandDialogComponent } from '@his-component/extand-dialog/dist/extand-dialog';
+import { ExtandDialogComponent } from '@his-directive/extand-dialog/dist/extand-dialog';
 import * as i6 from 'primeng/scrollpanel';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import * as i3 from 'primeng/api';
