@@ -4,6 +4,14 @@
   "newProjectRoot": "",
   "projects": {
     "InfoSidebar": {
+      "i18n": {
+        "sourceLocale":"zh-Hant",
+        "locales": {
+          "zh-Hant": "src/assets/i18n/zh-Hant/messages.json",
+          "en-Us":"src/assets/i18n/en-Us/messages.json",
+          "zh-Hans":"src/assets/i18n/zh-Hans/messages.json"
+        }
+      },
       "projectType": "library",
       "root": "info-sidebar",
       "sourceRoot": "info-sidebar/src",
@@ -15,6 +23,15 @@
             "project": "info-sidebar/ng-package.json"
           },
           "configurations": {
+            "zh-Hans":{
+              "localize": ["zh-Hans"]
+            },
+            "zh-Hant":{
+              "localize": ["zh-Hant"]
+            },
+            "en-Us":{
+              "localize": ["en-Us"]
+            },
             "production": {
               "tsConfig": "info-sidebar/tsconfig.lib.prod.json"
             },
@@ -84,6 +101,15 @@
             "scripts": []
           },
           "configurations": {
+            "zh-Hans":{
+              "localize": ["zh-Hans"]
+            },
+            "zh-Hant":{
+              "localize": ["zh-Hant"]
+            },
+            "en-Us":{
+              "localize": ["en-Us"]
+            },
             "production": {
               "budgets": [
                 {
@@ -118,6 +144,15 @@
             },
             "development": {
               "browserTarget": "app:build:development"
+            },
+            "zh-Hans":{
+              "browserTarget": "app:build:zh-Hans"
+            },
+            "zh-Hant":{
+              "browserTarget": "app:build:zh-Hant"
+            },
+            "en-Us":{
+              "browserTarget": "app:build:en-Us"
             }
           },
           "defaultConfiguration": "development"
@@ -126,6 +161,20 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "app:build"
+          },
+          "configurations": {
+            "zh-Hant":{
+              "format":"json",
+              "outputPath": "src/assets/i18n/zh-Hant"
+            },
+            "zh-Hans":{
+              "format":"json",
+              "outputPath": "src/assets/i18n/zh-Hans"
+            },
+            "en-Us":{
+              "format":"json",
+              "outputPath": "src/assets/i18n/en-Us"
+            }
           }
         },
         "test": {

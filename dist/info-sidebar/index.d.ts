@@ -1,5 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="info-sidebar" />
+/// <amd-module name="@his-directive/info-sidebar" />
 export * from './public-api';

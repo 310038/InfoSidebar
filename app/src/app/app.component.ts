@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { InfoSidebarComponent } from 'info-sidebar/src/public-api';
+import '@angular/localize/init';
 @Component({
   selector: 'app-root',
   standalone: true,

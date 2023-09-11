@@ -1,5 +1,5 @@
 {
-  "name": "info-sidebar",
+  "name": "@his-directive/info-sidebar",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^16.1.0",
@@ -11,7 +11,7 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "module": "fesm2022/info-sidebar.mjs",
+  "module": "fesm2022/his-directive-info-sidebar.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -19,9 +19,9 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2022": "./esm2022/info-sidebar.mjs",
-      "esm": "./esm2022/info-sidebar.mjs",
-      "default": "./fesm2022/info-sidebar.mjs"
+      "esm2022": "./esm2022/his-directive-info-sidebar.mjs",
+      "esm": "./esm2022/his-directive-info-sidebar.mjs",
+      "default": "./fesm2022/his-directive-info-sidebar.mjs"
     }
   }
 }
