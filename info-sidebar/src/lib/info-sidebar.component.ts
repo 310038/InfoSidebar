@@ -37,6 +37,16 @@ export class InfoSidebarComponent {
   @Input() title!: any;
 
   /**
+   * 接收欲呈現的dialog的高
+   */
+  @Input() height!: any;
+
+  /**
+   * 接收欲呈現的dialog的寬
+   */
+  @Input() width!: any;
+
+  /**
    * 接收欲呈現的模板
    */
   @Input() systemTemplateI!: TemplateRef<any>;
